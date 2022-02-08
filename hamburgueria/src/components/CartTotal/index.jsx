@@ -7,7 +7,7 @@ const cartTotal = () => {
         <span>Total</span>
         <span>R$ 40.00 </span>
       </div>
-      <Button>Remover Todos</Button>
+      <Button className={"btn btn-big"}>Remover Todos</Button>
     </div>
   );
 };

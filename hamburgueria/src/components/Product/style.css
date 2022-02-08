@@ -1,0 +1,22 @@
+.product {
+  list-style: none;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.product-category {
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.product-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #27ae60;
+}

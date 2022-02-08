@@ -1,10 +1,11 @@
 import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
 
+import "./style.css";
 const Cart = () => {
   return (
     <>
-      <div>
+      <div className="cart-header">
         <h3>Carrinho de Compras</h3>
       </div>
       <ul>

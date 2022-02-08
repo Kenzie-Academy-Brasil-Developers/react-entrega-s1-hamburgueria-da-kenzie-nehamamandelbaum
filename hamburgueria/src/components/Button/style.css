@@ -1,0 +1,31 @@
+.btn {
+  border-radius: 8px;
+  border: none;
+  color: #828282;
+  background-color: #e0e0e0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #e0e0e0;
+  background: #828282;
+}
+
+.btn-medium {
+  padding: 10px 20px;
+}
+
+.btn-green {
+  color: #fff;
+  background: #27ae60;
+}
+
+.btn-green:hover {
+  background: #93d7af;
+  color: #fff;
+}
+
+.btn-big {
+  padding: 20px 112px;
+}
