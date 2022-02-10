@@ -16,6 +16,9 @@ const Cart = ({ currentCart, setCurrentCart }) => {
               name={item.name}
               img={item.img}
               category={item.category}
+              currentCart={currentCart}
+              setCurrentCart={setCurrentCart}
+              id={item.id}
             />
           );
         })}

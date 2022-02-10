@@ -11,3 +11,7 @@ ul {
 .cart-container {
   background: #f5f5f5;
 }
+
+button {
+  cursor: pointer;
+}
