@@ -2,7 +2,7 @@ import "./style.css";
 
 import Button from "../Button";
 
-const Product = ({ name, category, price, img }) => {
+const Product = ({ name, category, price, img, handleClick, id }) => {
   return (
     <li className="product">
       <img src={img} alt="" className={name} />
@@ -10,7 +10,12 @@ const Product = ({ name, category, price, img }) => {
         <h3 className="product-name">{name}</h3>
         <span className="product-category">{category}</span>
         <span className="product-price">{price}</span>
-        <Button className="btn btn-medium btn-green"> Adicionar </Button>
+        <Button
+          className="btn btn-medium btn-green"
+          onClick={() => handleClick(id)}
+        >
+          Adicionar
+        </Button>
       </div>
     </li>
   );

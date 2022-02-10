@@ -1,13 +1,11 @@
-import img from "../../assets/img/productImg.svg";
-
 import "./style.css";
 
-const CartProduct = () => {
+const CartProduct = ({ name, img, category }) => {
   return (
     <li className="cart-product">
-      <img src={img} alt="nome do produto" className="cart-img" />
-      <h4 class="cart-product-name">Nome do Produto</h4>
-      <span className="cart-product-category">Categoria do Produto</span>
+      <img src={img} alt={name} className="cart-img" />
+      <h4 className="cart-product-name">{name}</h4>
+      <span className="cart-product-category">{category}</span>
       <button className="cart-product-button">Remover</button>
     </li>
   );

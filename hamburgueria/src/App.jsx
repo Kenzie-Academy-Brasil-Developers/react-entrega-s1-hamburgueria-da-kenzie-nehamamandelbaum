@@ -11,8 +11,6 @@ function App() {
   const [currentCart, setCurrentCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
 
-  console.log(filteredProducts);
-
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
       .then((response) => response.json())
@@ -37,10 +35,11 @@ function App() {
           <ProductsList
             products={products}
             filteredProducts={filteredProducts}
+            handleClick={handleClick}
           />
         </section>
         <section className="cart-container">
-          <Cart />
+          <Cart currentCart={currentCart} />
         </section>
       </main>
     </div>
