@@ -19,7 +19,10 @@ function App() {
   // função responsável por resceber o id de algum produto e adicionar o produto ao state currentCart
   const handleClick = (productId) => {
     const foundProduct = products.find(({ id }) => id === productId);
-    setCurrentCart([...currentCart, foundProduct]);
+    const productAlreadyExists = currentCart.includes(foundProduct);
+    if (!productAlreadyExists) {
+      setCurrentCart([...currentCart, foundProduct]);
+    }
   };
 
   return (
