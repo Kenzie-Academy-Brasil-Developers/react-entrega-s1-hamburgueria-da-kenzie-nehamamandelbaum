@@ -27,7 +27,6 @@ function App() {
 
   // função responsável por pegar o input do campo de busca e colocar dentro do estado dos filtered products
   const showProducts = (inputValue) => {
-    console.log("oiiii");
     const result = products.filter((product) =>
       product.name.toLowerCase().includes(inputValue.toLowerCase())
     );
@@ -37,12 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header
-        setFilteredProducts={setFilteredProducts}
-        products={products}
-        filteredProducts={filteredProducts}
-        showProducts={showProducts}
-      />
+      <Header showProducts={showProducts} />
       <main>
         <section className="products-list">
           {filteredProducts.length > 0 ? (

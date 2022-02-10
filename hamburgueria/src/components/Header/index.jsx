@@ -2,21 +2,11 @@ import InputSearch from "../InputSearch";
 import Logo from "../Logo";
 import "./style.css";
 
-const Header = ({
-  setFilteredProducts,
-  products,
-  filteredProducts,
-  showProducts,
-}) => {
+const Header = ({ showProducts }) => {
   return (
     <header className="header">
       <Logo />
-      <InputSearch
-        setFilteredProducts={setFilteredProducts}
-        products={products}
-        filteredProducts={filteredProducts}
-        showProducts={showProducts}
-      />
+      <InputSearch showProducts={showProducts} />
     </header>
   );
 };

@@ -3,12 +3,7 @@ import Button from "../Button";
 
 import "./style.css";
 
-const InputSearch = ({
-  setFilteredProducts,
-  products,
-  filteredProducts,
-  showProducts,
-}) => {
+const InputSearch = ({ showProducts }) => {
   const [inputValue, setInputValue] = useState("");
 
   return (
@@ -17,7 +12,10 @@ const InputSearch = ({
         type="text"
         className="search-input"
         placeholder="Digitar Pesquisa"
-        onChange={(evt) => setInputValue(evt.target.value)}
+        onChange={(evt) => {
+          showProducts(evt.target.value);
+          setInputValue(evt.target.value);
+        }}
       />
       <Button
         className="btn btn-medium btn-green btn-search"

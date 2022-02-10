@@ -9,7 +9,7 @@ const Product = ({ handleClick, product }) => {
       <div className="cart-product-text-content">
         <h3 className="product-name">{product.name}</h3>
         <span className="product-category">{product.category}</span>
-        <span className="product-price">{product.price}</span>
+        <span className="product-price">{product.price.toFixed(2)}</span>
         <Button
           className="btn btn-medium btn-green"
           onClick={() => handleClick(product.id)}
