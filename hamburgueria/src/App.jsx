@@ -38,7 +38,7 @@ function App() {
           />
         </section>
         <section className="cart-container">
-          <Cart currentCart={currentCart} />
+          <Cart currentCart={currentCart} setCurrentCart={setCurrentCart} />
         </section>
       </main>
     </div>

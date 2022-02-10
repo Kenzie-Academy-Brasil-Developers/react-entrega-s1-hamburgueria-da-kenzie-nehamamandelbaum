@@ -2,7 +2,7 @@ import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
 
 import "./style.css";
-const Cart = ({ currentCart }) => {
+const Cart = ({ currentCart, setCurrentCart }) => {
   return (
     <>
       <div className="cart-header">
@@ -20,7 +20,7 @@ const Cart = ({ currentCart }) => {
           );
         })}
       </ul>
-      <CartTotal currentCart={currentCart} />
+      <CartTotal currentCart={currentCart} setCurrentCart={setCurrentCart} />
     </>
   );
 };
