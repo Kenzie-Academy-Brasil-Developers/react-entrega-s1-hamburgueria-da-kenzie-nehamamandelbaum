@@ -9,7 +9,6 @@ function App() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentCart, setCurrentCart] = useState([]);
-  const [cartTotal, setCartTotal] = useState(0);
 
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")

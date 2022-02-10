@@ -20,7 +20,7 @@ const Cart = ({ currentCart }) => {
           );
         })}
       </ul>
-      <CartTotal />
+      <CartTotal currentCart={currentCart} />
     </>
   );
 };
