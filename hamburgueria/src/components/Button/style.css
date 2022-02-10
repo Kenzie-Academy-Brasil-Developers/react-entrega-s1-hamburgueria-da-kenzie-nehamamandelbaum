@@ -27,5 +27,15 @@
 }
 
 .btn-big {
-  padding: 20px 112px;
+  padding: 20px 97px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.btn-search {
+  width: 107px;
+  position: absolute;
+  top: 13px;
+  left: 173px;
 }

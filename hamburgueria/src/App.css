@@ -1,3 +1,13 @@
 * {
   box-sizing: border-box;
+  /* margin: 0px; */
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cart-container {
+  background: #f5f5f5;
 }

@@ -1,3 +1,32 @@
 .cart-product {
   list-style: none;
+  overflow: hidden;
+}
+
+.cart-img {
+  border-radius: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+.cart-product-name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cart-product-category {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.cart-product-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bdbdbd;
+  background: transparent;
+  border: none;
 }

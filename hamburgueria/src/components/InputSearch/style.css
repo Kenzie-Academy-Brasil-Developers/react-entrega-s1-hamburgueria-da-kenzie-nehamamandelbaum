@@ -1,9 +1,16 @@
+.input-search {
+  position: relative;
+}
+
 .search-input {
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
+  min-width: 288px;
   height: 60px;
   padding-left: 20px;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .search-input:focus {

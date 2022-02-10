@@ -1,5 +1,8 @@
 .product {
   list-style: none;
+  margin-right: 20px;
+  border: 2px solid #e0e0e0;
+  height: 345px;
 }
 
 .product-name {
@@ -12,6 +15,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #828282;
+  display: block;
 }
 
 .product-price {
@@ -19,4 +23,11 @@
   font-size: 14px;
   line-height: 24px;
   color: #27ae60;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cart-product-text-content {
+  padding-left: 15px;
 }
