@@ -25,20 +25,37 @@ function App() {
     }
   };
 
+  // função responsável por pegar o input do campo de busca e colocar dentro do estado dos filtered products
+  const showProducts = (inputValue) => {
+    console.log("oiiii");
+    const result = products.filter((product) =>
+      product.name.toLowerCase().includes(inputValue.toLowerCase())
+    );
+
+    setFilteredProducts(result);
+  };
+
   return (
     <div className="App">
       <Header
         setFilteredProducts={setFilteredProducts}
         products={products}
         filteredProducts={filteredProducts}
+        showProducts={showProducts}
       />
       <main>
         <section className="products-list">
-          <ProductsList
-            products={products}
-            filteredProducts={filteredProducts}
-            handleClick={handleClick}
-          />
+          {filteredProducts.length > 0 ? (
+            <ProductsList
+              productsToRender={filteredProducts}
+              handleClick={handleClick}
+            />
+          ) : (
+            <ProductsList
+              productsToRender={products}
+              handleClick={handleClick}
+            />
+          )}
         </section>
         <section className="cart-container">
           <Cart currentCart={currentCart} setCurrentCart={setCurrentCart} />

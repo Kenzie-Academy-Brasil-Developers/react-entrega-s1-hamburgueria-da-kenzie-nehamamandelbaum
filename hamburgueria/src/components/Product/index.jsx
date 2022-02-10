@@ -2,17 +2,17 @@ import "./style.css";
 
 import Button from "../Button";
 
-const Product = ({ name, category, price, img, handleClick, id }) => {
+const Product = ({ handleClick, product }) => {
   return (
     <li className="product">
-      <img src={img} alt="" className={name} />
+      <img src={product.img} alt={product.name} className="product-img" />
       <div className="cart-product-text-content">
-        <h3 className="product-name">{name}</h3>
-        <span className="product-category">{category}</span>
-        <span className="product-price">{price}</span>
+        <h3 className="product-name">{product.name}</h3>
+        <span className="product-category">{product.category}</span>
+        <span className="product-price">{product.price}</span>
         <Button
           className="btn btn-medium btn-green"
-          onClick={() => handleClick(id)}
+          onClick={() => handleClick(product.id)}
         >
           Adicionar
         </Button>

@@ -3,17 +3,13 @@ import Button from "../Button";
 
 import "./style.css";
 
-const InputSearch = ({ setFilteredProducts, products, filteredProducts }) => {
+const InputSearch = ({
+  setFilteredProducts,
+  products,
+  filteredProducts,
+  showProducts,
+}) => {
   const [inputValue, setInputValue] = useState("");
-
-  const showProducts = (inputValue) => {
-    console.log("oiiii");
-    const result = products.filter((product) =>
-      product.name.toLowerCase().includes(inputValue.toLowerCase())
-    );
-
-    setFilteredProducts(result);
-  };
 
   return (
     <div className="input-search">

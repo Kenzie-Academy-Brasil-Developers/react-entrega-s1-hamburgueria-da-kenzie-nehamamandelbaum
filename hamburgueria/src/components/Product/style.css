@@ -31,3 +31,8 @@
 .cart-product-text-content {
   padding-left: 15px;
 }
+
+.product-img {
+  width: 300px;
+  height: 150px;
+}
