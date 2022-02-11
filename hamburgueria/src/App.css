@@ -34,5 +34,6 @@ button {
   .cart-container {
     margin: 0px;
     width: 318px;
+    margin-top: 30px;
   }
 }
