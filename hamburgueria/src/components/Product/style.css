@@ -7,7 +7,7 @@
 
 .product-name {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -28,11 +28,11 @@
   margin-bottom: 15px;
 }
 
-.cart-product-text-content {
-  padding-left: 15px;
+.product-text-content {
+  padding: 15px;
 }
 
 .product-img {
-  width: 300px;
+  width: 186px;
   height: 150px;
 }

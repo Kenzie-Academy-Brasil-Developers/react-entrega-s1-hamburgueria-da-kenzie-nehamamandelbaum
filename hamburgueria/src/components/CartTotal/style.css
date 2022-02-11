@@ -11,3 +11,10 @@
   line-height: 24px;
   color: #828282;
 }
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 14px 20px 14px;
+  border-top: 2px solid #e0e0e0;
+}

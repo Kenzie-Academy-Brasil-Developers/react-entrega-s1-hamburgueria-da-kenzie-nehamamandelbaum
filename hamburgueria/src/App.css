@@ -10,8 +10,29 @@ ul {
 
 .cart-container {
   background: #f5f5f5;
+  max-width: 365px;
+  margin: 0 auto;
+  max-height: 512px;
+  border-radius: 8px;
 }
 
 button {
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+  }
+  .products-list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    row-gap: 57px;
+  }
+
+  .cart-container {
+    margin: 0px;
+    width: 318px;
+  }
 }

@@ -14,3 +14,8 @@
   overflow: auto;
   height: 320px;
 }
+
+.empty-cart-text {
+  text-align: center;
+  font-family: sans-serif;
+}

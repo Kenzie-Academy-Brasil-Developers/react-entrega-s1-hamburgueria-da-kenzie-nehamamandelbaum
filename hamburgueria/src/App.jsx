@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <Header showProducts={showProducts} />
-      <main>
+      <main className="main">
         <section className="products-list">
           {filteredProducts.length > 0 ? (
             <ProductsList
